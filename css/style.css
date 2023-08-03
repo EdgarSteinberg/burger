@@ -94,3 +94,18 @@ a.navbar-brand h1 {
   transform: scale(1.1);
   color: #ffffff;
 }
+
+
+@media screen and (max-width: 980px){
+  .cardCarrito{
+    flex-direction: column;
+  }
+}
+
+  
+@media screen and (max-width: 500px){
+  a.navbar-brand h1 {
+    font-size: 30px;  
+  }
+}
+  

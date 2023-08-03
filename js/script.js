@@ -1,7 +1,8 @@
-//capturo el ID
+//Capturo el ID
 let productCards = document.getElementById("product-cards")
-//creamos un array vacio
-let carrito = []
+//Creamos un array vacío
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
 
 
 //For con variable producto asignamos todo nuestro array
@@ -57,8 +58,10 @@ function actualizarCantidad(event) {
     producto.cantidad = cantidad
 }
 
-
-
+//caputaramos con getelementbyid carrito que es almacenado en carritocontenedor que despues le agregamos.innerHTML para vaciarlo
+// desestructuración para extraer las propiedades se crea un div con createElement
+//cardCarrito.innerHTML se actualiza la informacion del html luego se le agrega una clase para modificarlo en el css
+//carritoContenedor.appendChild se agrega el elemento cardCarrito, que contiene la información del producto esto añade visualmente el producto al carrito en la página web.
 function actualizarCarrito() {
     let carritoContenedor = document.getElementById("carrito")
     carritoContenedor.innerHTML = ""

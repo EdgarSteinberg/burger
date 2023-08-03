@@ -1,3 +1,7 @@
+//Tercera entrega
+// Nombre Edgar Apellido Steinberg
+
+
 //Capturo el ID
 let productCards = document.getElementById("product-cards")
 //Creamos un array vacío

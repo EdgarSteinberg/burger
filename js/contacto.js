@@ -24,37 +24,35 @@ let datoUsuario = {
 
 let registros = []
 
-
-if(localStorage.getItem("registros")){
-    registros = JSON.parse(localStorage.getItem("registros"))
-}else{
-    registros.push(datoUsuario)
-    localStorage.setItem("registros", JSON.stringify(datoUsuario))
-}
-console.log(registros)
-
 Swal.fire({
-    title: 'Are you sure?',
-    text: "You won't be able to revert this!",
+    title: 'Desea enviar el formulario?',
+    text: "",
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Yes, continue!'
+    confirmButtonText: 'Si, continua!',
+    
+    
 }).then((result) => {
     if (result.isConfirmed) {
         Swal.fire(
-            'Continued!',
-            'Your data has been submitted.',
+            'Continuando!',
+            'Tus datos han sido enviados.',
             'success'
         );
-       
+        if(localStorage.getItem("registros")){
+            registros = JSON.parse(localStorage.getItem("registros"))
+        }else{
+            registros.push(datoUsuario)
+            localStorage.setItem("registros", JSON.stringify(datoUsuario))
+        }
+        /* form.submit(); */
+        form.reset()
     }
 });
-/* Swal.fire(
-    'Has agregado este producto al carrito!',
-); */
- form.reset() 
+form.reset()
+
 
 })
 

@@ -65,3 +65,13 @@ let productos = [
         cantidad: 0
     }
 ]
+
+/* let burguer = []
+
+
+if(localStorage.getItem("burguer")) {
+    carrito = JSON.parse(localStorage.getItem("burguer"))
+}else{
+    burguer.push(...productos)
+    localStorage.setItem("burguer", JSON.stringify(burguer));
+} */

@@ -27,6 +27,14 @@ header nav button.btn {
   border-radius: 5px;
   color: white
 }
+h1{
+  font-size: x-large;
+}
+
+.navbar-brand{
+  font-size: 30px;
+  margin: 10px;
+}
 
 a.navbar-brand h1 {
   font-size: 50px;
@@ -84,7 +92,13 @@ a.navbar-brand h1 {
   display: flex;
 }
 
-.btn {
+/*   .btn {
+  background-color: #ffc107;
+  color: #ffffff;
+  width: 100%;
+  transition: 1s;
+} */
+.btn-agregar-carrito{
   background-color: #ffc107;
   color: #ffffff;
   width: 100%;
@@ -94,11 +108,48 @@ a.navbar-brand h1 {
   transform: scale(1.1);
   color: #ffffff;
 }
+.btn-secondary {
+  background-color: #ffc107;
+  border-radius: solid, 1px, #ffff;
+}
+.btn-secondary.bnt{
+  border-radius: solid, 1px, #ffff;
+}
+/*---------------------------FORMULARIO-------------------*/
+
+.container {
+  margin-top: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #343a40;
+  display: block;
+  margin-right: 15vw;
+  text-align: center;
+}
+
+.form-control {
+  border-color: #ffc107;
+  color: #343a40;
+}
 
 
 @media screen and (max-width: 980px){
   .cardCarrito{
     flex-direction: column;
+  }
+  .row{
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -106,6 +157,13 @@ a.navbar-brand h1 {
 @media screen and (max-width: 500px){
   a.navbar-brand h1 {
     font-size: 30px;  
+  
   }
+  .row{
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
+
   

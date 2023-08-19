@@ -1,3 +1,5 @@
+//Proyecto final Nombre Edgar Apellido Steinberg
+
 // Arreglo para almacenar los datos de los productos en el catálogo.
 let productos;
 // Arreglo para almacenar los productos en el carrito de compras.

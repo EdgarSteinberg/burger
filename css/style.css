@@ -117,7 +117,7 @@ a.navbar-brand h1 {
 }
 
 /*---------------------------FORMULARIO-------------------*/
-.darkbuton{
+.darkbuton {
   margin: 15px;
   padding: 7px;
   border-radius: 15px;
@@ -148,6 +148,14 @@ label {
   color: #343a40;
 }
 
+.dark-theme {
+  background-color: black;
+}
+
+.dark-text {
+  color: white;
+}
+
 /*---------------------------MEDIA-------------------*/
 @media screen and (max-width: 980px) {
   .cardCarrito {
@@ -173,4 +181,3 @@ label {
   }
 
 }
-

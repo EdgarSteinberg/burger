@@ -40,6 +40,7 @@ h1 {
 a.navbar-brand h1 {
   font-size: 50px;
   padding: 20px;
+ 
 
 }
 
@@ -57,7 +58,7 @@ a.navbar-brand h1 {
 
 .titulo {
   text-align: center;
-  color: white;
+  color: rgb(12, 12, 12);
   padding: 15px;
   background-color: rgb(238, 197, 15);
 
@@ -179,5 +180,34 @@ label {
     justify-content: center;
     align-items: center;
   }
+
+}
+
+@media screen and (max-width: 400px) {
+.portada{
+  height: 50vh;
+
+}
+.titulo{
+  padding: 3px;
+ 
+}
+.titulo p{
+  font-size: 20px;
+  font-weight: 100px;
+  text-align: center;
+  color: #000;
+  
+}
+body > header > nav > div > a{
+  width: 100%;
+  text-align: center;
+ 
+}
+.navbar-brand {
+  font-size: 20px;
+  margin: 0%;
+  
+}
 
 }
